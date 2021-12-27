@@ -1,9 +1,3 @@
-# lru
-This package of `lru` is the most concise and efficient LRU algorithm based on golang.
-
-# Example
-Quick start:
-```go
 package main
 
 import (
@@ -33,4 +27,3 @@ func main() {
 
 	fmt.Println("result: ", str)
 }
-```
