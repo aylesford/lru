@@ -95,7 +95,7 @@ func (c *LRUCache) Get(key interface{}) (val interface{}, hit bool) {
 		c.Lock()
 		c.itemList.MoveToFront(item)
 		c.Unlock()
-		return item, true
+		return item.Value.(*entry).val, true
 	}
 
 	return nil, false
